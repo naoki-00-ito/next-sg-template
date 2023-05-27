@@ -1,9 +1,14 @@
 import Hero from "@/components/Hero";
+import Comment from "@/components/Comment";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Hero />
+      <Comment start={"HERO"} end={"/HERO"}>
+        <Hero />
+      </Comment>
     </>
   );
-}
+};
+
+export default Home;
